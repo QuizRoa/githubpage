@@ -6,6 +6,10 @@
   background-color: #d0fbe9;
   box-sizing: border-box;
 }
+#task-counters{
+  margin-top: 0.5rem;
+  text-align: center;
+}
 body{
   overflow: hidden;
 }
