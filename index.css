@@ -3,31 +3,47 @@
   border: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
-  background-color: #d0fbe9;
   box-sizing: border-box;
-}
-#task-counters{
-  margin-top: 0.5rem;
-  text-align: center;
+  background-color: rgba(236, 229, 229, 0.384);
 }
 body{
   overflow: hidden;
 }
+.size-6{
+  background-color: #18aa49;
+  border: 1px solid black;
+
+}
+.size-7{
+  background-color: #db2020;
+  border: 1px solid black;
+
+}
+.size-7:hover{
+  background-color: #b81717;
+
+}
+.size-6:hover{
+  background-color: #128639;
+
+}
+
 #main{
   margin: 2rem;
+  padding: 1rem;
+ 
 }
 
 #title{
-   
     background-color: #012d26;
     text-align: center;
-    
 }
 
 h1{
-  background-color: #31d6a9;
+  background-color: #15759b;
   padding: 2rem;
   font-size: 1.8rem;  
+  color:black;
   
 }
 
@@ -40,20 +56,20 @@ h1{
 
 #main-form-button{
   width: 100%;
-  background-color: #027a63;
+  background-color: #15759b;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
-
+  color:white;
 }
 
 #main-form-button:hover{
-  background-color: #05604f;
+  background-color: #0e5774;
 }
 
 .main-form-helper-text{
   color: red;
+  font-size: 0.8rem; 
 }
-
 #task-list{
   list-style: none;
   padding: 1rem;
@@ -71,21 +87,30 @@ h1{
 }
 
 .task-item-delete-button{
-  background-color: rgb(187, 46, 46);
+  
   padding: 0.3rem;
+  width: 5rem;
 }
 .task-item-delete-button:hover{
-  background-color: rgb(165, 39, 39);
+  
   padding: 0.3rem;
 }
-
 .task-item-check-button{
-  background-color: green;
-  padding: 0.3rem;
+  height: auto;
+  width: 5rem;
 }
 
-.task-item-check-button:hover{
-  background-color: rgb(1, 117, 1);
+#task-counters{
+  margin-top: 0.5rem;
+  text-align: center;
+  padding: 0.3rem;
+  background-color: #496774;
+  color: white;
+}
+
+.task-item-text{
+  display: flex;
+  width: 100%;
 }
 
 /* Responsive */
@@ -225,4 +250,39 @@ h1{
 }
 
 
+}
+
+@media (min-width: 1524px) and (max-width: 2560px) {
+  /* Estilos para pantallas de 24 a 32 pulgadas */
+  #main {
+    margin: 5rem; 
+  }
+
+  h1 {
+    font-size: 2.2rem; 
+    padding: 1rem;
+  }
+
+  #task-input {
+    padding: 0.9rem; 
+  }
+
+  #main-form-button {
+    padding: 1.2rem; 
+  }
+
+  #task-list {
+    max-height: 600px; 
+  }
+
+  .task-item {
+
+    margin-bottom: 0.5rem;
+  }
+
+  .task-item-delete-button,
+  .task-item-check-button {
+    width: 25%; 
+    margin-top: 0.5rem;
+  }
 }
